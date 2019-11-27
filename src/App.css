@@ -2,14 +2,9 @@ body {
   margin: 34px 138px 616px 138px;
 }
 
-form {
-  display: flex;
-  justify-content: flex-end;
-}
 
 .Header-board  {
   display: flex;
-  flex-grow: 1;
 }
 
 .Header-board ul {
@@ -29,26 +24,43 @@ label {
   justify-content: center;
 }
 
-.Time-form ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-h1 {
-  width: 160px;
-  height: 36px;
-  color: #ff801a;
-  font-family: Sans-serif;
-}
-
-.Week1-content h1 {
-  width: 81px;
-  height: 19px;
-  color: #adbb0c;
-}
-
 .Slider-container {
   display: flex;
   justify-content: space-between;
 }
+
+.Slider h1 {
+  width: 158px;
+  height: 90px;
+  font-size: 30px;
+  color: #ff801a;
+  font-family: Sans-serif;
+}
+
+.Board {
+  height: 580px;
+  display: flex;
+}
+
+.Time-form  {
+  background-color: gray;
+}
+
+.Days-section  {
+  color: #adbb0c;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+/* .Days-section h1 {
+  display: flex;
+  flex-direction: row;
+  width: 181px;
+  height: 19px;
+  color: #adbb0c;
+
+} */
+
 

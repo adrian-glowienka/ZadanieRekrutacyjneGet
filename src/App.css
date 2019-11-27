@@ -1,0 +1,54 @@
+body {
+  margin: 34px 138px 616px 138px;
+}
+
+form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Header-board  {
+  display: flex;
+  flex-grow: 1;
+}
+
+.Header-board ul {
+  display: flex;
+  justify-content: space-around;
+  color: orange;
+  flex-grow: 3;
+
+}
+
+ul {
+  list-style:none;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+}
+
+.Time-form ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  width: 160px;
+  height: 36px;
+  color: #ff801a;
+  font-family: Sans-serif;
+}
+
+.Week1-content h1 {
+  width: 81px;
+  height: 19px;
+  color: #adbb0c;
+}
+
+.Slider-container {
+  display: flex;
+  justify-content: space-between;
+}
+

@@ -4,11 +4,11 @@ export default class Header extends Component {
     render() {
         return (
             <nav className="Header-board">
-                <ul>
-                    <li>DASCHBOARD</li>
-                    <li>RECIPES</li>
-                    <li>CHALLENGE</li>
-                </ul>
+                <div className="Buttons">
+                        <button>DASHBOARRD</button>
+                        <button>RECIPES</button>
+                        <button>CHALLENGE</button>
+                </div>
                 <form>
                     <input 
                         name="login" 

@@ -6,18 +6,21 @@ body {
 .Header-board  {
   display: flex;
   flex-wrap: wrap;
-}
-
-.Header-board ul {
-  display: flex;
   justify-content: space-around;
-  color: orange;
-  flex-grow: 3;
-
+  margin-bottom: 50px;
 }
 
-ul {
-  list-style:none;
+.Buttons {
+  margin-left: 200px;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+form {
+  display: flex;
+  flex: 3;
+  justify-content: flex-end;
 }
 
 label {
@@ -64,6 +67,7 @@ label {
   height: 87px;
   color: gray;
   display: flex;
+  flex-wrap: wrap;
 }
 
 /*

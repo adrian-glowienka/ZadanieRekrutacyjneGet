@@ -2,6 +2,9 @@ body {
   margin: 34px 138px 616px 138px;
 }
 
+/* div {
+  box-sizing: border-box;
+} */
 
 .Header-board  {
   display: flex;
@@ -39,28 +42,47 @@ label {
 
 .Board {
   height: 580px;
-  display: flex;
 }
 
 .Time-form  {
   background-color: gray;
+
 }
 
 .Days-section  {
   color: #adbb0c;
   display: flex;
   justify-content: space-between;
+}
+
+.Days-week  {
+  width: 126px;
+  height: 87px;
+}
+
+.Item {
+  width: 126px;
+  height: 87px;
+  color: gray;
+}
+
+.Item p {
+  display: flex;
+  justify-content: center;
+}
+
+.Item p1 {
+  display: flex;
+  justify-content: center;
+}
+
+.Footer {
+  display: flex;
 
 }
 
 
-/* .Days-section h1 {
-  display: flex;
-  flex-direction: row;
-  width: 181px;
-  height: 19px;
-  color: #adbb0c;
 
-} */
+
 
 

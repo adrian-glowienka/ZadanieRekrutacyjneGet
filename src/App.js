@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header/header';
 import Slider from './components/Slider/Slider';
 import WeekBoard from './components/WeekBoard/WeekBoard';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <Slider />
         <WeekBoard />
+        <Footer />
     </div>
   );
 }

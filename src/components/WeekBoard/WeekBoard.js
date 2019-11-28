@@ -7,7 +7,7 @@ export default class WeekBoard extends Component {
                 <div className="Days-section">
 
                     <div className="Days-week">
-                        <div>
+                        <div className="Item">
                             <h1>Time</h1>
                         </div> 
                         <div className="Item">

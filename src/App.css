@@ -1,13 +1,11 @@
 body {
-  margin: 34px 138px 616px 138px;
+  margin: 34px 138px 70px 138px;
 }
 
-/* div {
-  box-sizing: border-box;
-} */
 
 .Header-board  {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .Header-board ul {
@@ -30,6 +28,7 @@ label {
 .Slider-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .Slider h1 {
@@ -53,19 +52,21 @@ label {
   color: #adbb0c;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .Days-week  {
-  width: 126px;
-  height: 87px;
+  border: 1px solid black;
 }
 
 .Item {
   width: 126px;
   height: 87px;
   color: gray;
+  display: flex;
 }
 
+/*
 .Item p {
   display: flex;
   justify-content: center;
@@ -74,12 +75,20 @@ label {
 .Item p1 {
   display: flex;
   justify-content: center;
-}
+} */
 
 .Footer {
+  margin-top: 50px;
   display: flex;
-
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
+.Foot {
+  width: 305px;
+}
+
+
 
 
 

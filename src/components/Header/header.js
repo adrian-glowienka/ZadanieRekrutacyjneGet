@@ -5,9 +5,9 @@ export default class Header extends Component {
         return (
             <nav className="Header-board">
                 <div className="Buttons">
-                        <button>DASHBOARRD</button>
-                        <button>RECIPES</button>
-                        <button>CHALLENGE</button>
+                        <button className="Button">DASHBOARRD</button>
+                        <button className="Button">RECIPES</button>
+                        <button className="Button">CHALLENGE</button>
                 </div>
                 <form>
                     <input 

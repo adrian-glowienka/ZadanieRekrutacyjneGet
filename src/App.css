@@ -17,6 +17,10 @@ body {
   justify-content: space-around;
 }
 
+.Button:hover {
+  color: green;
+}
+
 form {
   display: flex;
   flex: 3;

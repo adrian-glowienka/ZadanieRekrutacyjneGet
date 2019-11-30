@@ -1,6 +1,27 @@
 import React, { Component } from 'react'
+import { auth } from 'firebase';
 
 export default class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            email: "",
+            password: ""
+        }
+    }
+    SignUp = (email, password) => {
+        try {
+            auth
+            .createUserWithEmailAndPassword(email, password)
+            .then(user => {
+                console.log(user)
+            })
+        } catch (error) {
+            console.log(error.toString(error));
+        }
+    }
+    
+    
     render() {
         return (
             <nav className="Header-board">
@@ -14,11 +35,13 @@ export default class Header extends Component {
                         name="login" 
                         type="text" 
                         placeholder="Login"
+                        onChangeText={email => this.setState({ email })}
                     />
                     <input 
                         name="password" 
                         type="password" 
                         placeholder="Password"
+                        onChangeText={password => this.setState({ password })}
                     />
                     <button>Submit</button>
                 </form>

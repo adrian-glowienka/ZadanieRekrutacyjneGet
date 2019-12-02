@@ -34,9 +34,9 @@ export default class Header extends Component {
         return (
             <nav className="Header-board">
                 <div className="Buttons">
-                        <button className="Button">DASHBOARRD</button>
-                        <button className="Button">RECIPES</button>
-                        <button className="Button">CHALLENGE</button>
+                        <button className="Button-Top-Active">DASHBOARRD</button>
+                        <button className="Button-Top">RECIPES</button>
+                        <button className="Button-Top">CHALLENGE</button>
                 </div>
             <form>
               <input type="text" name="email" placeholder="Email" value={email} onChange={this.handleInputChange} />
@@ -47,7 +47,7 @@ export default class Header extends Component {
                 value={password}
                 onChange={this.handleInputChange}
               />
-              <button onClick={this.handleSubmit}>Submit</button>
+              <button className="Button-Submit"onClick={this.handleSubmit}>Submit</button>
             </form>
             </nav>
         )

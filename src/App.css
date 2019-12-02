@@ -17,14 +17,39 @@ body {
   justify-content: space-around;
 }
 
-.Button:hover {
-  color: green;
+.Button-Top:hover {
+  color: orange;
+}
+
+.Button-Top-Active {
+  color: orange;
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+  cursor: pointer;
 }
 
 form {
   display: flex;
   flex: 3;
   justify-content: flex-end;
+}
+
+
+
+.Button-Submit {
+  border: 2px solid;
+  border-radius: 0 20px 20px 0;
+  color: blue;
+}
+
+.Button-Top {
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+  cursor: pointer;
 }
 
 label {
@@ -62,9 +87,12 @@ label {
   flex-wrap: wrap;
 }
 
-.Days-week  {
-  border: 1px solid black;
+.Free  {
+  transform: rotate(-90deg);
+  font-size: 150px;
+  height: 500px;
 }
+
 
 .Item {
   width: 126px;
@@ -74,27 +102,47 @@ label {
   flex-wrap: wrap;
 }
 
-/*
-.Item p {
-  display: flex;
-  justify-content: center;
+.Days-week-time {
+
+  background-color: rgb(236, 234, 234);
 }
 
-.Item p1 {
+.Item {
   display: flex;
-  justify-content: center;
-} */
+  align-content: center;
+}
+
 
 .Footer {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  color: gray;
 }
 
 .Foot {
   width: 305px;
+  border-right: 2px solid gray;
+  height: 250px;
 }
+
+.Button-Bottom-Prop {
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+  cursor: pointer;
+  color: gray;
+  font-size: 20px;
+}
+
+.Button-Bottom-Prop:hover {
+  color: rgb(56, 55, 55);
+}
+
+
+
 
 
 

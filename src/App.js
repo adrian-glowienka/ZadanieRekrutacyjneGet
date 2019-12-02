@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header/header';
 import Slider from './components/Slider/Slider';
 import WeekBoard from './components/WeekBoard/WeekBoard';
 import Footer from './components/Footer/Footer';
+import Header from './components/Header/header';
 
 function App() {
   return (

@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Carousel from '../Carousel/Carousel';
+
 
 export default class Slider extends Component {
     render() {
@@ -7,8 +9,8 @@ export default class Slider extends Component {
                 <div>
                     <p>YOUR 12 WEEK PROGRESS</p>
                 </div>
-                <div className="Slider">
-                    <h1>Week 7 </h1>
+                <div>
+                    <Carousel />
                 </div>
                 <div>
                     <p>SELECT YOUR PROTEIN OPTIONS</p>

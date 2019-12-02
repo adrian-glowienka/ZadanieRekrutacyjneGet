@@ -2,27 +2,35 @@ import React, { Component } from 'react'
 import { auth } from 'firebase';
 
 export default class Header extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
+    
+       
+        state = {
             email: "",
             password: ""
         }
-    }
-    SignUp = (email, password) => {
-        try {
-            auth
-            .createUserWithEmailAndPassword(email, password)
-            .then(user => {
-                console.log(user)
-            })
-        } catch (error) {
-            console.log(error.toString(error));
-        }
-    }
+    
+
+        handleInputChange = (event) => {
+            this.setState({ [event.target.name]: event.target.value });
+          };
+        
+          handleSubmit = (event) => {
+            event.preventDefault();
+            const { email, password } = this.state;
+        
+            
+            auth.createUserWithEmailAndPassword(email, password)
+              .then((user) => {
+                this.props.history.push('/');
+              })
+              .catch((error) => {
+                this.setState({ error: error });
+              });
+          };
     
     
     render() {
+        const { email, password } = this.state;
         return (
             <nav className="Header-board">
                 <div className="Buttons">
@@ -30,21 +38,17 @@ export default class Header extends Component {
                         <button className="Button">RECIPES</button>
                         <button className="Button">CHALLENGE</button>
                 </div>
-                <form>
-                    <input 
-                        name="login" 
-                        type="text" 
-                        placeholder="Login"
-                        onChangeText={email => this.setState({ email })}
-                    />
-                    <input 
-                        name="password" 
-                        type="password" 
-                        placeholder="Password"
-                        onChangeText={password => this.setState({ password })}
-                    />
-                    <button>Submit</button>
-                </form>
+            <form>
+              <input type="text" name="email" placeholder="Email" value={email} onChange={this.handleInputChange} />
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                value={password}
+                onChange={this.handleInputChange}
+              />
+              <button onClick={this.handleSubmit}>Submit</button>
+            </form>
             </nav>
         )
     }

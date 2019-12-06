@@ -8,6 +8,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 50px;
+
 }
 
 .Buttons {
@@ -140,6 +141,27 @@ label {
 .Button-Bottom-Prop:hover {
   color: rgb(56, 55, 55);
 }
+
+/* @media (min-width: 320px) and (max-width: 480px) {
+  
+  .Footer-Media {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Week-Media {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Header-Media {
+    color: blueviolet;
+  }
+  
+} */
+
+
+
 
 
 

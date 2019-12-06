@@ -8,10 +8,10 @@ import Header from './components/Header/header';
 function App() {
   return (
     <div className="App">
-        <Header />
+        <Header className="Header-Media"/>
         <Slider />
-        <WeekBoard />
-        <Footer />
+        <WeekBoard className="Week-Media"/>
+        <Footer className="Footer-Media"/>
     </div>
   );
 }

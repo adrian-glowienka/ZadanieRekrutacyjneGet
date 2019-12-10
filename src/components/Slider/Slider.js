@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SimpleSlider from '../Carousel/Carousel';
+import SimpleSlider from '../SimpleSlider/SimpleSlider';
 
 
 export default class Slider extends Component {

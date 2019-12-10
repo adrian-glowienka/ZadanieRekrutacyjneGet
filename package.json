@@ -8,12 +8,14 @@
     "jquery": "^3.4.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-media": "^1.10.0",
     "react-responsive": "^8.0.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-slick": "^0.25.2",
     "react-with-firebase-auth": "^1.2.0",
-    "reactstrap": "^8.1.1"
+    "reactstrap": "^8.1.1",
+    "styled-media-query": "^2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",

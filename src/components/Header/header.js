@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { auth } from 'firebase';
-import MediaQuery from 'react-responsive'
 
 export default class Header extends Component {
        
@@ -33,7 +32,6 @@ export default class Header extends Component {
         const { email, password } = this.state;
         return (
             <nav className="Header-board">
-              <MediaQuery minDeviceWidth={320} device={{ deviceWidth: 480 }}></MediaQuery>
                 <div className="Buttons">
                         <button className="Button-Top-Active">DASHBOARRD</button>
                         <button className="Button-Top">RECIPES</button>

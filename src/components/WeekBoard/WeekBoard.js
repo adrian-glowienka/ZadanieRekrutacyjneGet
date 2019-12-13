@@ -148,8 +148,8 @@ export default class WeekBoard extends Component {
 
                     <div className="Days-week">
                         <h1>DAY 70</h1>
-                        <div className="Free">
-                            <p1>Free</p1>
+                        <div className="Item-Free">
+                            <p className="Free">Free</p>
                         </div>
                     </div>
 

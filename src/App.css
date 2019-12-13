@@ -123,10 +123,10 @@ Select {
   flex-wrap: wrap;
 }
 
-.Free  {
+.Free {
   transform: rotate(-90deg);
   font-size: 150px;
-  height: 500px;
+  color: #adbb0c;
 }
 
 
@@ -136,16 +136,17 @@ Select {
   color: gray;
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
+}
+
+.Item-Free {
+  width: 126px;
+  height: 440px;
 }
 
 .Days-week-time {
 
   background-color: rgb(236, 234, 234);
-}
-
-.Item {
-  display: flex;
-  align-content: center;
 }
 
 

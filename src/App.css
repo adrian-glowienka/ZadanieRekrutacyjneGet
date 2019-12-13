@@ -37,11 +37,14 @@ form {
 }
 
 
-
 .Button-Submit {
   border: 2px solid;
   border-radius: 0 20px 20px 0;
-  color: blue;
+  color: gray;
+}
+
+.Button-Submit:hover {
+  background-color: orange;
 }
 
 .Button-Top {
@@ -63,12 +66,45 @@ label {
   flex-wrap: wrap;
 }
 
-.Slider h1 {
-  width: 158px;
-  height: 90px;
-  font-size: 30px;
-  color: #ff801a;
-  font-family: Sans-serif;
+.Select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+}
+Select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Select:hover::after {
+  color: #f39c12;
+}
+
+.Select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+.Select-Options {
+  font-size: 20px;
+  color: orange;
+  background-color: rgb(236, 234, 234);
 }
 
 .Board {
